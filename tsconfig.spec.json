@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"types": ["jest"],
+		"isolatedModules": false,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+	},
+	"include": [ "src/**/*.spec.mts" ],
+	"exclude": []
+}

@@ -1,0 +1,33 @@
+{
+	"transform": {
+		"\\.mts$": "ts-jest"
+	},
+	"globals": {
+		"ts-jest": {
+			"useESM": true,
+			"tsconfig": "tsconfig.spec.json"
+		}
+	},
+	"moduleNameMapper": {
+		"^(\\.\\.?/.*)\\.mjs$": [
+			"$1.mts",
+			"$0"
+		]
+	},
+	"testMatch": [
+		"**/__tests__/**/*.m[jt]s?(x)",
+		"**/?(*.)+(spec|test).m[tj]s?(x)"
+	],
+	"moduleFileExtensions": [
+		"js",
+		"mjs",
+		"cjs",
+		"jsx",
+		"cts",
+		"mts",
+		"ts",
+		"tsx",
+		"json",
+		"node"
+	  ]
+}
